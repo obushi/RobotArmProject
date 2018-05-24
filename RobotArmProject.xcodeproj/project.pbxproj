@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6E2A8372208882EA00DE6CBD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E2A8371208882EA00DE6CBD /* main.cpp */; };
+		6E8694F820B647CC00BAD47B /* manipulator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E8694F620B647CC00BAD47B /* manipulator.cpp */; };
+		6E8694FB20B64D5600BAD47B /* transform_matrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E8694F920B64D5600BAD47B /* transform_matrix.cpp */; };
+		6E8694FE20B64F2E00BAD47B /* joint_angle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6E8694FC20B64F2E00BAD47B /* joint_angle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		6E2A836E208882EA00DE6CBD /* RobotArmProject */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RobotArmProject; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E2A8371208882EA00DE6CBD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		6E8694F620B647CC00BAD47B /* manipulator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = manipulator.cpp; sourceTree = "<group>"; };
+		6E8694F720B647CC00BAD47B /* manipulator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = manipulator.hpp; sourceTree = "<group>"; };
+		6E8694F920B64D5600BAD47B /* transform_matrix.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = transform_matrix.cpp; sourceTree = "<group>"; };
+		6E8694FA20B64D5600BAD47B /* transform_matrix.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = transform_matrix.hpp; sourceTree = "<group>"; };
+		6E8694FC20B64F2E00BAD47B /* joint_angle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = joint_angle.cpp; sourceTree = "<group>"; };
+		6E8694FD20B64F2E00BAD47B /* joint_angle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = joint_angle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				6E2A8371208882EA00DE6CBD /* main.cpp */,
+				6E8694F620B647CC00BAD47B /* manipulator.cpp */,
+				6E8694F720B647CC00BAD47B /* manipulator.hpp */,
+				6E8694F920B64D5600BAD47B /* transform_matrix.cpp */,
+				6E8694FA20B64D5600BAD47B /* transform_matrix.hpp */,
+				6E8694FC20B64F2E00BAD47B /* joint_angle.cpp */,
+				6E8694FD20B64F2E00BAD47B /* joint_angle.hpp */,
 			);
 			path = RobotArmProject;
 			sourceTree = "<group>";
@@ -118,6 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E8694F820B647CC00BAD47B /* manipulator.cpp in Sources */,
+				6E8694FB20B64D5600BAD47B /* transform_matrix.cpp in Sources */,
+				6E8694FE20B64F2E00BAD47B /* joint_angle.cpp in Sources */,
 				6E2A8372208882EA00DE6CBD /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
