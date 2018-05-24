@@ -7,6 +7,7 @@
 //
 
 #include "manipulator.hpp"
+#include "grapher.hpp"
 
 int main(int argc, const char * argv[]) {
     robot_arm_project::Manipulator manipulator;
@@ -19,6 +20,9 @@ int main(int argc, const char * argv[]) {
     
     // 運動学->逆運動学の順に計算すると元の角度が得られる
     manipulator.PrintDegree();
+    
+    robot_arm_project::Grapher gnuplot;
+    gnuplot.Plot("cos(x)");
     
     return 0;
 }
