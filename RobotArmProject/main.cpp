@@ -8,8 +8,10 @@
 
 #include "manipulator.hpp"
 #include "grapher.hpp"
+#include "trajectory_generator.hpp"
 
 int main(int argc, const char * argv[]) {
+    
     robot_arm_project::Manipulator manipulator;
     
     // 運動学の計算・変換行列の代入
@@ -23,6 +25,13 @@ int main(int argc, const char * argv[]) {
     
     robot_arm_project::Grapher gnuplot;
     gnuplot.Plot("cos(x)");
+    
+    robot_arm_project::TrajectoryGenerator tg;
+    auto func = tg.CalclateTrajectoryFunction(0, 0, 10, 0, 3);
+    std::cout << func(0) << std::endl;
+    
+    gnuplot.SetRangeX(0, 3);
+    gnuplot.Plot(tg.CalclateTrajectory(0, 0, 10, 0, 3).c_str());
     
     return 0;
 }
