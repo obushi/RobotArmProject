@@ -45,4 +45,8 @@ namespace robot_arm_project {
     void Grapher::Flush() {
         fflush(fp);
     }
+    
+    void Grapher::SetRangeX(const double min, const double max) {
+        Execute("set xrange [%f:%f]", min, max);
+    }
 }

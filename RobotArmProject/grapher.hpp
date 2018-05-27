@@ -7,6 +7,7 @@
 //
 
 #pragma once
+
 #include <fstream>
 #include <iostream>
 
@@ -22,5 +23,6 @@ namespace robot_arm_project {
         ~Grapher();
         void Execute(const char * command, ...);
         void Plot(const char * function);
+        void SetRangeX(const double min, const double max);
     };
 }
