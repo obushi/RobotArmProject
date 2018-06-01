@@ -23,6 +23,33 @@ namespace robot_arm_project {
         ~Grapher();
         void Execute(const char * command, ...);
         void Plot(const char * function);
+        
+        template <class T, int N>
+        void Plot(T (&cont)[N])
+        {
+            int x = 0;
+            Execute("plot '-' w lp");
+            while (x < N) {
+                Command("%f", cont[x]);
+                x++;
+            }
+            Execute("e");
+        }
+        
+        template <class T, int N, int M>
+        void Plot(T (&contX)[N], T (&contY)[M])
+        {
+            int x = 0;
+            int y = 0;
+            Execute("plot '-' w lp");
+            while (x < N && y < M) {
+                Execute("%f %f", contX[x], contY[y]);
+                x++; y++;
+            }
+            Execute("e");
+        }
+        
         void SetRangeX(const double min, const double max);
+        void SetRangeY(const double min, const double max);
     };
 }
