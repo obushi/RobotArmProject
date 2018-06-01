@@ -53,4 +53,8 @@ namespace robot_arm_project {
     void Grapher::SetRangeY(const double min, const double max) {
         Execute("set yrange [%f:%f]", min, max);
     }
+    
+    void Grapher::SetRangeZ(const double min, const double max) {
+        Execute("set zrange [%f:%f]", min, max);
+    }
 }
