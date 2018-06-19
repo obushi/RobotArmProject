@@ -42,6 +42,10 @@ namespace robot_arm_project {
         Execute("plot %s", function);
     }
     
+    void Grapher::Plot(const std::string function) {
+        Execute("plot %s", function.c_str());
+    }
+    
     void Grapher::Flush() {
         fflush(fp);
     }

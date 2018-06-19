@@ -60,6 +60,20 @@ namespace robot_arm_project {
         return JointAngle(p1, p2, p3, p4, p5, p6);
     }
     
+    void Manipulator::Simulate(double duration_in_second, double dt_in_second) {
+        if (trajectories.size() <= 0) {
+            return;
+        }
+        
+        for (double t = 0; t <= duration_in_second; t += dt_in_second) {
+            pd_controller.Compute(dt_in_second, <#std::array<double, 6> observed#>, <#std::array<double, 6> target#>)
+        }
+    }
+    
+    void Manipulator::RenderTrajectory() {
+        
+    }
+    
     void Manipulator::Print() const {
         mat.Print();
         joint_angle.Print();

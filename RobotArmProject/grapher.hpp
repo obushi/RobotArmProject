@@ -23,6 +23,7 @@ namespace robot_arm_project {
         ~Grapher();
         void Execute(const char * command, ...);
         void Plot(const char * function);
+        void Plot(const std::string);
         
         template <class T>
         void Plot(T const &series)
